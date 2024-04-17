@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: space-between;
   color: var(--font_clr);
-  padding: 0 20px;
+  padding: 5px 20px;
   position: relative;
 }
 .left_nav {
