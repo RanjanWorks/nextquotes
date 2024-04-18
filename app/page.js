@@ -1,10 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Header } from "@/components/Header";
+
+
+import Quote from "@/components/Quote";
 export default function Home() {
   return (
  <>
- <Header/>
+ <div className="container">
+ <Quote/>
+ </div>
  </>
   );
 }

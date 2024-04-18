@@ -1,7 +1,9 @@
 "use client"
 
+
 import React from 'react';
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
+import Link from 'next/link';
 
 export const Header = () => {
   const toggleNavLinks = () => {
@@ -21,13 +23,13 @@ export const Header = () => {
       </a>
       <div className="nav_links">
         <ul>
-          <li><a href="#">Random</a></li>
-          <li><a href="#">Success</a></li>
-          <li><a href="#">Motivation</a></li>
-          <li><a href="#">Love</a></li>
-          <li><a href="#">Sad</a></li>
-          <li><a href="#">Attitude</a></li>
-          <li><a href="#">Positive</a></li>
+          <li><Link href="/">Random</Link></li>
+          <li><Link href="/Success">Success</Link></li>
+          <li><Link href="/Motivation">Motivation</Link></li>
+          <li><Link href="/Love">Love</Link></li>
+          <li><Link href="/Sad">Sad</Link></li>
+          <li><Link href="/Attitude">Attitude</Link></li>
+          <li><Link href="/Positive">Positive</Link></li>
         </ul>
       </div>
     </nav>
