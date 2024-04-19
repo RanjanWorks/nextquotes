@@ -1,16 +1,18 @@
 "use client"
 
-
+import { usePathname } from 'next/navigation'
 import React from 'react';
 import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
 import Link from 'next/link';
 
 export const Header = () => {
+  const pathname = usePathname()
   const toggleNavLinks = () => {
     document.querySelector('.nav_links').classList.toggle('active');
     document.querySelector('.toggle').classList.toggle('active');
-  };
 
+  };
+console.log("pathName:", pathname)
   return (
     <nav className='navbar'>
       <div className="left_nav">
@@ -23,13 +25,13 @@ export const Header = () => {
       </a>
       <div className="nav_links">
         <ul>
-          <li><Link href="/Random">Random</Link></li>
-          <li><Link href="/Success">Success</Link></li>
-          <li><Link href="/Motivation">Motivation</Link></li>
-          <li><Link href="/Love">Love</Link></li>
-          <li><Link href="/Sad">Sad</Link></li>
-          <li><Link href="/Attitude">Attitude</Link></li>
-          <li><Link href="/Positive">Positive</Link></li>
+          <li><Link className={`link ${pathname === '/Random' ? 'active' : ''}`} href="/Random">Random</Link></li>
+          <li><Link className={`link ${pathname === '/Success' ? 'active' : ''}`} href="/Success">Success</Link></li>
+          <li><Link className={`link ${pathname === '/Motivation' ? 'active' : ''}`} href="/Motivation">Motivation</Link></li>
+          <li><Link className={`link ${pathname === '/Love' ? 'active' : ''}`} href="/Love">Love</Link></li>
+          <li><Link className={`link ${pathname === '/Sad' ? 'active' : ''}`} href="/Sad">Sad</Link></li>
+          <li><Link className={`link ${pathname === '/Attitude' ? 'active' : ''}`} href="/Attitude">Attitude</Link></li>
+          <li><Link className={`link ${pathname === '/Positive' ? 'active' : ''}`} href="/Positive">Positive</Link></li>
         </ul>
       </div>
     </nav>

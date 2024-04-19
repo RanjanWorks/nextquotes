@@ -27,7 +27,7 @@ const Quote = ({url}) => {
   const fetchMoreData = () => {
     fetchData();
   };
-
+if(isLoading) return(<Loading />)
   return (
     <InfiniteScroll
       dataLength={quotes.length}

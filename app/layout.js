@@ -2,6 +2,8 @@
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
+import NextTopLoader from 'nextjs-toploader';
+
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      <NextTopLoader color="red" height={3} zIndex={9999999999999}/>
  <Header/>
         {children}
  <Footer/>
