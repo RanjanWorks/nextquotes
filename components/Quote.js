@@ -5,7 +5,7 @@ import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 import axios from "axios";
 import Loading from "./Loading";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const Quote = ({ url }) => {
@@ -33,21 +33,25 @@ const Quote = ({ url }) => {
     }
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const [fetchCount, setFetchCount] = useState(0);
 
+  useEffect(() => {
+    if (fetchCount < 10) {
+      fetchData();
+      setFetchCount(prevCount => prevCount + 1);
+    }
+  }, [fetchCount]);
   const fetchMoreData = () => {
     fetchData();
   };
 
-  if (isLoading) return <Loading />;
+  if (isLoading) return <Loading times={10}/>;
   return (
     <InfiniteScroll
       dataLength={quotes.length}
       next={fetchMoreData}
       hasMore={!isLoading} // Disable loading more when already loading
-      loader={<Loading />}
+      loader={<Loading times={1} />}
       endMessage={<p>No more quotes to load.</p>}
       scrollThreshold={"200px"}
     >
