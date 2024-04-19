@@ -59,6 +59,7 @@ const Quote = ({ url }) => {
         <div key={i} className="card">
           <p className="type">{quote.type}</p>
           <p className="quote">{quote.quote}</p>
+<hr />
           {copiedIndex === i ? (
             <div className="icon">
             <CheckCircleOutlineIcon  />

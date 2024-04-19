@@ -2,9 +2,9 @@
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Footer from "@/components/Footer";
-import NextTopLoader from 'nextjs-toploader';
-import { ToastContainer } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import NextTopLoader from "nextjs-toploader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,14 +16,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <NextTopLoader color="red" height={3} zIndex={9999999999999}/>
+        <NextTopLoader zIndex={9999999999999} />
 
- <Header/>
+        <Header />
         {children}
- <Footer/>
-        
-      <ToastContainer/>
-        </body>
+        <Footer />
+
+        <ToastContainer />
+      </body>
     </html>
   );
 }

@@ -19,10 +19,10 @@ console.log("pathName:", pathname)
         <CategoryRoundedIcon/>
         <div className="brand_name">Quotes</div>
       </div>
-      <a href="#" className='toggle' onClick={toggleNavLinks}>
+      <div className='toggle' onClick={toggleNavLinks}>
         <span className='bar'></span>
         <span className='bar'></span>
-      </a>
+      </div>
       <div className="nav_links">
         <ul>
           <li><Link className={`link ${pathname === '/Random' ? 'active' : ''}`} href="/Random">Random</Link></li>

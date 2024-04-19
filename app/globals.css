@@ -19,8 +19,8 @@ body {
 
 .navbar {
   display: flex;
-  background-color: #00000081;
-  backdrop-filter: blur(4px);
+  background-color: #000000a9;
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid #27272a;
   
   align-items: center;
@@ -63,13 +63,16 @@ ul li a {
   padding: 1rem;
   display: block;
   font-size: clamp(13px, 4vw, 16px);
+  position: relative;
 }
 
 ul li a:hover {
   color: white;
 }
 a.active{
-  color: white;
+  color: #20daff;
+  font-weight: bold;
+  
 }
 .toggle {
   position: absolute;
@@ -138,6 +141,11 @@ a.active{
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 10px;
 }
+
+hr{
+  border: 1px solid #27272a;
+margin: 5px 0;
+}
 .card{
   width: 100%;
   /* height: 100px; */
@@ -147,6 +155,10 @@ a.active{
   color: #d5d5e3;
   padding: 20px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 .quote{
   cursor: text;
