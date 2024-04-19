@@ -23,7 +23,7 @@ export const Header = () => {
       </a>
       <div className="nav_links">
         <ul>
-          <li><Link href="/">Random</Link></li>
+          <li><Link href="/Random">Random</Link></li>
           <li><Link href="/Success">Success</Link></li>
           <li><Link href="/Motivation">Motivation</Link></li>
           <li><Link href="/Love">Love</Link></li>
