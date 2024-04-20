@@ -49,7 +49,7 @@ export default function BasicTabs() {
 
   return (
     <Box sx={{ width: '100%',background:"#0D0D0D"}}>
-      <Box sx={{ borderBottom: 1, borderColor: '#27272a', backgroundColor:"#131316",paddingLeft:"20px" }}>
+      <Box sx={{ borderBottom: 1, borderColor: '#27272a', backgroundColor:"#131316"}}>
         <Tabs  textColor="#d5d5e3"
         indicatorColor="secondary" value={value} onChange={handleChange}  variant="scrollable"  allowScrollButtonsMobile scrollButtons="auto" aria-label="basic tabs example" sx={{background:"#131316",color:"white"}} > 
           <Tab  label="Random" {...a11yProps(0)}  />

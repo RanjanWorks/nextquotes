@@ -43,7 +43,7 @@ margin: 5px 0;
 .card{
   width: 100%;
   border: 1px solid #27272a;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: black;
   color: #d5d5e3;
   padding: 20px;
