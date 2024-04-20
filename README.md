@@ -12,10 +12,12 @@ A React application that fetches quotes from an API and allows users to copy quo
 ## Technologies Used
 
 - React
+- Next.js
 - Axios
 - react-infinite-scroll-component
-- react-toastify
 - Material-UI Icons
+- react-loading-skeleton
+- emotion/react
 
 ## Getting Started
 
