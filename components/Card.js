@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import ContentCopyRoundedIcon from "@mui/icons-material/ContentCopyRounded";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import Tooltip from '@mui/material/Tooltip';
