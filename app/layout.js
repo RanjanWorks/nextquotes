@@ -9,6 +9,9 @@ import ColorTabs from "@/components/Tabs";
 export const metadata = {
   title: "Quotes App",
   description: "a hindi quotes app by ranjan",
+  icons: {
+    icon: './favicon.png', 
+  },
 };
 
 export default function RootLayout({ children }) {
